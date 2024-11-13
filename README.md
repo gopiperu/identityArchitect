@@ -25,4 +25,4 @@ Decision Guide Which SSO Flow and When
 OIDC
 ![image](https://github.com/user-attachments/assets/9be95165-dbe6-4798-a889-0c194cfe42ff)
 
-
+Lawrence Necombe "Cloud Sundial"
