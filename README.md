@@ -6,3 +6,10 @@
 ![image](https://github.com/user-attachments/assets/c64115ac-e2c9-44c1-b3af-202cb23e15c2)
 
 ![image](https://github.com/user-attachments/assets/4292905e-fdb2-418c-9e92-7928dc35be05)
+
+
+
+
+![image](https://github.com/user-attachments/assets/b9f69155-9e83-474d-8783-6b4fa3e34bf1)
+
+Decision Guide Which SSO Flow and When 
