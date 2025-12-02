@@ -22,3 +22,15 @@ High level flow:
 7. if the Hash matches and not expired then authentication will be completed at SP side and session token issued. 
 
 
+*************************
+How to do it
+*************************
+This process uses salesforce as an IDP and SP. 
+We are using two different orgs. one for IDP and the other one for SP. 
+Setting up IDP. 
+* Go to setup --> Identity Provider. 
+* Click the button to enable Identity provider. 
+* It will create a self signed certificate ( will be later used for signing SAML Assertion). Save the certificate. 
+* The certificate is generated with an expiry date ( default to one year)
+
+
