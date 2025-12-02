@@ -1,0 +1,24 @@
+SAML SP initiated SSO is the most common scenario for implementing SSO for most clients. 
+* SAML has been around for a long time. 
+* SAML assertion is XML based. 
+* Not very great for Mobile apps, Saas applications. but used mostly in enterprise / government systems. 
+
+*******************************
+High level flow: 
+
+1. SP has a button in the login page ( login with IDP) that triggers the initiation of SSO. 
+  * SP initiates a SSO request based on the details configured in SP. 
+  * SP uses a ACS url to send the request. 
+2. IDP receives the SSO Request and checks if the given a user session is already active ( How ?? are we sending a unique identifier). Not very sure about that.
+3. IDP displays the login page for the user to enter username and password ( SP is completely not aware of the username/password entered by the user). 
+4. IDP authenticates the user and if the username and password is valid. 
+  * Then, it creates a SAML assertion with the status ( success), Federated Identifier ( username, email or corporate Id), signs it with a private key ( to make sure the message is not tampered with).
+5. SP receives the SAML assertion and its time for the SP to validate the SAML assertion message. 
+6. SP user the public key to validate the SAML assertion message.
+  * This process uses asymmetric encryption. 
+  * From SP end , SP uses the public key ( added at the time of setting up single sign based on saml metadata from IDP) and creates a HASH based on the public key it has and compares with the details provided in the SAML assertion. 
+  * if the has wont match then it means somebody tried to tamper the data in the middle and will be rejected by the SP. 
+  * it also checks for the expiry date/time of the SAML assertion and in case if its expired then also it will be rejected. 
+7. if the Hash matches and not expired then authentication will be completed at SP side and session token issued. 
+
+
