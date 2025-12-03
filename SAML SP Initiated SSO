@@ -34,3 +34,13 @@ Setting up IDP.
 * The certificate is generated with an expiry date ( default to one year)
 
 
+************************
+Issues and troubleshooting
+*************************
+
+* Entity id should the org url of the SP and should be an exact match. 
+* ACS url in the IDP connected app should be the login url of the SP org. which is the same as org url. 
+* Profile not added to the connected app lead to this error :   Expected element not found: EncryptedAssertion
+* The Login to IDP was failing due to the enforcement of Security token for which I had to add the IP address as trusted IP range ( Apparantly this seems to be caused by the 
+above reason : Profile was not added to the connected app of IDP).
+
