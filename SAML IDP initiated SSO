@@ -1,1 +1,9 @@
 
+IDP initiated sso is usually not recommended as due to the following security issue. 
+
+* Lack of context because the SP receives an unsolicited SAML response. 
+* SP is forced to rely solely on the assertion timestamp which is less reliable. 
+
+A real world example to understand this better. 
+SP Initiated SSO --> Somebody comes to the office door and they are sent to security office to get the pass and come back. 
+IDP initiated SSO --> somebody directly goes from security office with a pass.
