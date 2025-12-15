@@ -11,3 +11,6 @@ Why: Because it has some restrictions.
 
 Limitation: 
 * Experience cloud doesnt support this flow
+
+Note: 
+* A refresh token is never issued in this flow.
