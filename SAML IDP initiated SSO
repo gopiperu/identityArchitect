@@ -11,3 +11,5 @@ IDP initiated SSO --> somebody directly goes from security office with a pass.
 * In the connected app of the IPD's connected app, you will have a url for IDP- initiated Login URL : for 
 example https://resilient-wolf-2mwje1-dev-ed.trailblaze.my.salesforce-setup.com/one/one.app#/alohaRedirect/https://resilient-wolf-2mwje1-dev-ed.trailblaze.my.salesforce.com/idp/login?app=0spaj0000002h8v&isdtp=p1
 * it basically has the app Id appended to it. on clicking of this link initiates an IDP initiated auth flow. 
+
+Who holds the private key: IDP
