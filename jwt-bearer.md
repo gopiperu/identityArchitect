@@ -3,6 +3,7 @@
 * The JWT token is sent to the server for authentication, the server holds the public key and uses it to decrypt the message and validate.
 * If its valid, then the system issues a access token.
 * It is considered much safer as it uses Asymmetric encryption.
+* Who holds the private key : The client app
 
 Steps: 
 1. Create a self signed certificate with public key and private key pairs.
