@@ -33,6 +33,7 @@ Setting up IDP.
 * It will create a self signed certificate ( will be later used for signing SAML Assertion). Save the certificate. 
 * The certificate is generated with an expiry date ( default to one year)
 
+Who holds the private key: IDP
 
 ************************
 Issues and troubleshooting
