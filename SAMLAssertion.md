@@ -5,3 +5,9 @@ SAML Assertion flow:
 * Once, the assertion is validated by the authentication server, it issues an access token.
 * It appears that this flow is not ideal when it comes to security.
 * No need for a connected app (when compared to other flows like JWT  or client credentials). It uses single sign on configuration
+
+Almost Impractical: 
+Why: Because it has some restrictions. 
+
+Limitation: 
+* Experience cloud doesnt support this flow
